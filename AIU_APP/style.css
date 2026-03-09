@@ -1,0 +1,117 @@
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f4f7fb;
+  color:#1f2937;
+}
+
+.app-container{
+  max-width:1400px;
+  margin:auto;
+  padding:16px 20px;
+}
+
+.page-header{
+  margin-bottom:12px;
+}
+
+.page-header h1{
+  margin:0;
+  font-size:28px;
+}
+
+.subtitle{
+  color:#64748b;
+  margin-top:4px;
+  font-size:14px;
+}
+
+.panel{
+  background:white;
+  border-radius:14px;
+  padding:10px 12px;
+  margin-bottom:10px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.05);
+}
+
+.controls-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+
+.control-group{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+
+.control-group label{
+  font-size:13px;
+}
+
+.control-group select,
+.control-group input{
+  height:34px;
+  padding:4px 8px;
+  border-radius:8px;
+  border:1px solid #cbd5e1;
+}
+
+.kpi-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-bottom:10px;
+}
+
+.kpi-card{
+  background:white;
+  border-radius:12px;
+  padding:8px 12px;
+  box-shadow:0 4px 14px rgba(0,0,0,0.05);
+}
+
+.kpi-label{
+  font-size:11px;
+  color:#64748b;
+  display:block;
+  margin-bottom:2px;
+}
+
+.kpi-card strong{
+  font-size:18px;
+}
+
+.section-header{
+  margin-bottom:8px;
+}
+
+.section-header h2{
+  margin:0;
+  font-size:16px;
+}
+
+#map{
+  height:42vh;
+  min-height:300px;
+  max-height:420px;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,0.06);
+}
+
+.chart-container{
+  height:22vh;
+  min-height:180px;
+  max-height:220px;
+}
+
+#timeChart{
+  width:100%;
+  height:100%;
+}

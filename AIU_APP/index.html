@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>AIU Copilot</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app-container">
+
+<header class="page-header">
+<h1>AIU Copilot</h1>
+<p class="subtitle">Prototype de visualisation spatio-temporelle pour la navigation maritime</p>
+</header>
+
+
+<section class="panel controls-panel">
+
+<div class="controls-grid">
+
+<div class="control-group">
+<label>Navire</label>
+<select id="vesselSelect">
+<option value="IMO1">IMO1</option>
+<option value="IMO2">IMO2</option>
+<option value="IMO3">IMO3</option>
+</select>
+</div>
+
+<div class="control-group">
+<label>Variable</label>
+<select id="variableSelect">
+<option value="speed_kn">Speed</option>
+<option value="rpm">RPM</option>
+</select>
+</div>
+
+<div class="control-group">
+<label>Date début</label>
+<input type="date" id="startDate">
+</div>
+
+<div class="control-group">
+<label>Date fin</label>
+<input type="date" id="endDate">
+</div>
+
+</div>
+
+</section>
+
+
+<section class="kpi-grid">
+
+<div class="kpi-card">
+<span class="kpi-label">Distance parcourue</span>
+<strong id="kpiDistance">-</strong>
+</div>
+
+<div class="kpi-card">
+<span class="kpi-label">Durée</span>
+<strong id="kpiDuration">-</strong>
+</div>
+
+<div class="kpi-card">
+<span class="kpi-label">Moyenne variable</span>
+<strong id="kpiAverage">-</strong>
+</div>
+
+</section>
+
+
+<section class="panel map-panel">
+<div class="section-header">
+<h2>Trajectoire</h2>
+</div>
+
+<div id="map"></div>
+</section>
+
+
+<section class="panel chart-panel">
+
+<div class="section-header">
+<h2>Évolution temporelle</h2>
+</div>
+
+<div class="chart-container">
+<canvas id="timeChart"></canvas>
+</div>
+
+</section>
+
+</div>
+
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
