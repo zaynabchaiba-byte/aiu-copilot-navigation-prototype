@@ -30,11 +30,11 @@ L'application permet de visualiser la trajectoire de navires et d'analyser certa
 ---
 
 ## Structure du projet
-
+```
 aiu-copilot-navigation-prototype
 │
 ├── README.md
-├── Technical_Answers.md   (ou .pdf)
+├── Technical_Answers.pdf
 │
 └── AIU_APP
     │
@@ -45,7 +45,7 @@ aiu-copilot-navigation-prototype
     └── data
         ├── ships_dataset.csv
         └── trajectory_segments.csv
-
+```
 ---
 
 ## Données
